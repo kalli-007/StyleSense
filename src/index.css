@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400..900;1,400..900&family=Inter:wght@100..900&family=Outfit:wght@100..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Bodoni Moda", serif;
+  --font-display: "Bodoni Moda", serif;
+  
+  --color-fashion-gold: #D4AF37;
+  --color-fashion-black: #1A1A1A;
+  --color-fashion-cream: #F9F7F2;
+}
+
+@layer base {
+  body {
+    @apply bg-fashion-cream text-fashion-black antialiased;
+  }
+}
+
+.glass-card {
+  @apply bg-white/70 backdrop-blur-md border border-white/20 shadow-xl;
+}
+
+.fashion-gradient {
+  @apply bg-gradient-to-br from-fashion-black to-zinc-800;
+}
+
+.markdown-body h1 { @apply text-2xl font-serif mb-4 mt-6; }
+.markdown-body h2 { @apply text-xl font-serif mb-3 mt-5; }
+.markdown-body p { @apply mb-4 leading-relaxed; }
+.markdown-body ul { @apply list-disc pl-5 mb-4; }
+.markdown-body li { @apply mb-2; }
+
